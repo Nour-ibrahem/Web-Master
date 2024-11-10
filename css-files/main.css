@@ -343,6 +343,8 @@ html{
     .articles .box{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-left: -50px;
     }
 }
 @media(max-width:853px){
@@ -424,7 +426,12 @@ hr{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     background-color: #ececec;
-    width: 115%;
+    /* width: 115%; */
+}
+@media(max-width:767px){
+    .Gallery{
+        width: 120%;
+    }
 }
 .Gallery .special{
     display: flex;
@@ -464,18 +471,25 @@ hr{
     grid-template-columns: repeat( 3, 1fr);
     gap: 25px;
 }
+@media(max-width:767px){
+    .Gallery .parent{
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media(max-width:1024px){
     .Gallery .parent{
         display:grid;
         grid-template-columns: repeat( 2, 1fr);
         gap: 15px;
+        margin-left: -50px;
     }
 }
 @media(max-width:767px){
     .Gallery .parent{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 2rem;
+        margin-left: 7rem;
         gap: 25px;
     }
 }
@@ -562,7 +576,7 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         position: relative;
-        margin: 20px;
+        margin-left: 60px;
     }
 }
 /* End media  */
