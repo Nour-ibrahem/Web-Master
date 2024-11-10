@@ -471,20 +471,6 @@ hr{
         gap: 15px;
     }
 }
-/* @media(max-width:1024px){
-    .Gallery .parent{
-        margin-left: 6rem;
-        gap: 30px;
-    }
-} */
-/* @media(max-width:767px){
-    .Gallery .parent{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-} */
 @media(max-width:767px){
     .Gallery .parent{
         display: grid;
