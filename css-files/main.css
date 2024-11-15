@@ -166,11 +166,18 @@ html{
 /* End Head */
 /* start section */
 .section{
-    background-color: var(--section-color);
+    transform: rotateY(196deg);
+    background-color: rebeccapurple;
     height: 90vh;
     position: relative;
     z-index: 1;
     padding-bottom: var(--section-padding);
+    transition: 0.3s;
+}
+.section:hover{
+    transform: rotateY(0deg);
+    background-color: rebeccapurple;
+    transition: 0.3s;
 }
 @media(max-width:360px){
     .section{
@@ -184,7 +191,7 @@ html{
     content: '';
     background-color: white;
     display: block;
-    width: 99%;
+    width: 101%;
     height: 15%;
     top: 91%;
     left: 0;
@@ -1391,4 +1398,154 @@ hr{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+.Latest-Events .special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    z-index: 1;
+    bottom:40px
+}
+.Latest-Events .special:hover{
+    color: white;
+    border: none;
+}
+.Latest-Events .special::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    right: 310px;
+    transition:var(--main-transition);
+}
+.Latest-Events .special::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: 310px;
+    transition:var(--main-transition);
+}
+.Latest-Events .special:hover::before{
+    width: 50%;
+    height: 100%;
+    right: 150px;
+    border-radius: 0px;
+    z-index: -1;
+}
+.Latest-Events .special:hover::after{
+    width: 56%;
+    height: 100%;
+    left: 140px;
+    border-radius: 0px;
+    z-index: -1;
+}
+.Latest-Events .img img{
+    height: 450px;
+}
+.Latest-Events .content{
+    display: flex;
+}
+.Latest-Events .content .info{
+    margin-left: 5rem;
+    display: grid;
+}
+.Latest-Events .content .big-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+    gap: 15px;
+}
+.Latest-Events .content .info .min-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 100px;
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.Latest-Events .content .info .min-info:hover{
+    border-color: var(--main-color-alt);
+}
+.Latest-Events .content .info .min-info:hover .Time{
+    border-color: var(--main-color-alt);
+}
+.Latest-Events .content .info .min-info .date{
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.Latest-Events .content .info .min-info .Time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: -1px;
+}
+.Latest-Events .text{
+    text-align: center;
+}
+.Latest-Events .text p{
+    font-size: 15px;
+    line-height: 1.7;
+    color: #777;
+    font-weight:900;
+}
+.Latest-Events .inputs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.Latest-Events .inputs input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 40px;
+    text-align: left;
+    margin-left: 100px;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px;
+}
+.Latest-Events .inputs button{
+    cursor: pointer;
+    background-color: var(--main-color-alt);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 35px;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: bold;
+}
 /* End Latest Events */
+.Pricing-Plans{
+    padding-top:var(--section-padding);
+    padding-bottom:var(--section-padding);
+}
